@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Centered Form</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(216, 235, 241);
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+
+    }
+
+    
+
+    .submit {
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgb(216, 235, 241);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Contact Us</h1>
+    <form>
+      <div>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name"><br><br>
+      </div>
+      <div>
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact"><br><br>
+      </div>
+
+      <div>
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label><br><br>
+      </div>
+
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob"><br><br>
+      </div>
+
+      <div class="submit">
+        <input type="submit" value="Submit" class="submit-button">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    © Made by Amarvir Singh, URN-2434916
+  </footer>
+</body>
+
+</html>
